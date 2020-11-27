@@ -1,0 +1,162 @@
+.usercenter {
+	height: 640px;
+}
+
+.content .user_rgt .tab_list {
+	padding-top: 10px;
+	height: 90px;
+	width: 100%;
+}
+
+.tab_list .tab_left {
+	width: 400px;
+}
+
+.tab_list .tab_left .tab_name {
+	font-size: 16px;
+	padding: 10px 0;
+	color: #333;
+}
+
+.tab_list .tab_left .tab_info {
+	font-size: 12px;
+	color: #666;
+}
+
+.tab_list .tab_rgt {
+	width: calc(100% - 400px);
+	height: 100%;
+}
+
+.tab_list .tab_rgt::after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.tab_list .tab_rgt>li {
+	float: left;
+	width: calc(100% / 3);
+	text-align: right;
+}
+
+.tab_list .tab_rgt>li>a {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.tab_list .tab_rgt>li>a .img_item {
+	width: 65px;
+	height: 65px;
+	line-height: 65px;
+	border-radius: 50%;
+	background-color: #f94f4b;
+	text-align: center;
+	padding-top: 10px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.tab_list .tab_rgt>li>a .goods {
+	background-color: #09c478;
+}
+
+.tab_list .tab_rgt>li>a .appraise {
+	background-color: #409ffb;
+}
+
+/* 个人详细信息 */
+.user_rgt .pe_cont {
+	margin-top: 30px;
+	border-top: 1px solid #eee;
+	height: 250px;
+}
+
+.user_rgt .pe_cont .pe_item {
+	float: left;
+	width: 49%;
+	height: 100%;
+	padding-top: 30px;
+}
+
+.user_rgt .pe_cont .pe_lef {
+	border-right: 1px solid #eee;
+}
+
+.pe_cont .pe_item .pe_tit {
+	font-size: 14px;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+.pe_item .pe_basic>div {
+	margin-bottom: 10px;
+}
+
+.pe_item .pe_basic label {
+	padding-right: 5px;
+}
+
+.pe_item .pe_basic input {
+	border: 1px solid #e3e3e3;
+	color: #666;
+	padding: 6px 4px;
+	border-radius: 3px;
+	min-width: 200px;
+	background: #FFF;
+	outline: 0;
+}
+
+.pe_item .pe_basic>div>div.sex {
+	display: inline-block;
+	background: #d4d4d4;
+	padding: 0px 20px;
+	border-radius: 3px;
+	color: #FFF;
+	cursor: pointer;
+	margin: 0 10px 0 -3px;
+	box-sizing: border-box;
+}
+
+.pe_item .pe_basic>div>div.blue {
+	background: #2e8ae4 !important;
+}
+
+.pe_basic>div>div.sex img {
+	width: 16px;
+	vertical-align: -4px;
+	margin-right: 5px;
+}
+
+.user_rgt .pe_cont .pe_rgt {
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.pe_cont .pe_rgt .pe_basic label {
+	width: 39px;
+	text-align: right;
+	display: inline-block;
+}
+
+.pe_button {
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	margin: 50px auto 0 auto;
+	text-align: center;
+}
+
+.pe_button .submitBtn {
+	border: 0;
+	width: 100px !important;
+	background: #2e8ae4;
+	color: #FFF;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all, .5s;
+	outline: none;
+}

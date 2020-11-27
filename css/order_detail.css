@@ -1,0 +1,249 @@
+.usercenter .list_st {
+	height: 36px;
+	line-height: 36px;
+	color: #666;
+	position: relative;
+}
+
+.usercenter .list_st .st {
+	position: absolute;
+	left: 70px;
+	top: 0;
+}
+
+.user_rgt .user_rgt_tit .o_tit {
+	font-size: 16px;
+	color: #333333;
+}
+
+.user_rgt .user_rgt_tit .o_number {
+	margin-top: 30px;
+	font-size: 14px;
+	color: #666;
+}
+
+.user_rgt_tit .o_number .o_time {
+	margin-left: 30px;
+}
+
+.user_rgt_tit .o_btn {
+	margin: 40px 0 30px 0;
+}
+
+.user_rgt_tit .o_btn .o_order {
+	font-size: 14px;
+	color: #666;
+	padding-left: 10px;
+}
+
+.user_rgt_tit .o_btn .o_blue {
+	padding: 5px 15px 7px 15px;
+	border: 0;
+	background: #2e8ae4;
+	border-radius: 3px;
+	color: #FFF;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+
+/* 流程 */
+.user_rgt_tit .o_cont {
+	position: relative;
+}
+
+.user_rgt_tit .o_cont .bar {
+	position: absolute;
+	left: 12px;
+	top: 0;
+	width: 90%;
+	height: 4px;
+	background: #eee;
+	border-radius: 50px;
+	position: absolute;
+	top: 21px;
+	z-index: 1;
+}
+
+.user_rgt_tit .o_cont .bar2 {
+	position: absolute;
+	left: 12px;
+	top: 0;
+	width: 24%;
+	height: 4px;
+	background: #2e8ae4;
+	border-radius: 50px;
+	position: absolute;
+	top: 21px;
+	z-index: 2;
+}
+
+.user_rgt_tit .o_process {
+	width: 100%;
+	height: 120px;
+	position: relative;
+	z-index: 3;
+}
+
+.user_rgt_tit .o_process>li {
+	float: left;
+	margin-right: 140px;
+	/* width: 20%; */
+}
+
+
+.user_rgt_tit .o_process>li:last-child {
+	text-align: right;
+	margin-right: 0;
+}
+
+.o_process>li .li_time {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.o_process>li .step_bg {
+	width: 45px;
+	height: 45px;
+	background: #efefef;
+	display: block;
+	border-radius: 50%;
+	margin-left: 10px;
+	box-shadow: 0 0 0 10px rgba(238, 238, 238, 0.3);
+}
+
+.o_process>li .step_one {
+	background: #2e8ae4;
+	box-shadow: 0 0 0 10px rgba(195, 226, 253, .3);
+}
+
+.o_process>li .step_bg>img {
+	width: 45px;
+	height: 45px;
+	display: block;
+}
+
+.o_process>li .li_time {
+	margin-top: 15px;
+}
+
+.o_process>li .li_time>p {
+	color: #999;
+	line-height: 16px;
+	font-size: 12px;
+}
+
+.o_process>li .li_time .steps_title {
+	font-size: 14px;
+	color: #666;
+	padding-bottom: 5px;
+}
+
+.user_rgt .o_tab {
+	margin-top: 20px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 20px 0 30px 0;
+}
+
+.user_rgt .o_tab .log_title {
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+.user_rgt .o_tab .log_wrap {
+	padding-bottom: 10px;
+}
+
+.user_rgt .o_tab .log_wrap:last-child {
+	margin-bottom: 0;
+}
+
+.user_rgt .log_wrap_left {
+	width: 400px;
+}
+
+.log_pro_name {
+	font-size: 14px;
+	padding-bottom: 8px;
+	color: #333;
+}
+
+dl.dl_log dt {
+	float: left;
+	margin-right: 10px;
+}
+
+dl.dl_log dd {
+	color: #666;
+	line-height: 25px;
+}
+
+dl.dl_log dt img {
+	width: 130px;
+	height: 130px;
+	display: block;
+}
+
+.user_rgt .log_wrap_right {
+	width: 450px;
+}
+
+.log_wrap_right .dl_scoll {
+	max-height: 180px;
+	overflow: auto;
+}
+
+.log_wrap_right .dl_scoll>a {
+	display: block;
+	color: #333;
+}
+
+/* 个人信息 */
+.logistic_infor {
+	margin-top: 20px;
+}
+
+.logistic_infor .log_bottom {
+	border: 0;
+	flex-wrap: nowrap;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.log_bottom {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.frist-wrap {
+	margin-right: 40px;
+}
+
+.log_bottom_wrap {
+	width: 298px;
+}
+
+.log_bottom_wrap {
+	width: 298px;
+}
+
+.last-bottom {
+	width: 200px;
+}
+
+.log_information {
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+.log_bottom_wrap ul li em {
+	font-style: normal;
+}
+
+.log_bottom_wrap ul li {
+	color: #666;
+	line-height: 24px;
+}

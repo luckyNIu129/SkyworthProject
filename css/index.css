@@ -1,0 +1,379 @@
+/* banner图 */
+body {
+	background-color: #f4f4f4;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.swiper1 {
+	height: 510px;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+}
+
+/* .swiper1 {
+	margin-top: 90px;
+} */
+.swiper1 .banner_img {
+	width: 100%;
+	height: 510px;
+	display: block;
+	background-position: center center;
+	background-size: cover;
+}
+
+.swiper1 .swiper_left {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	width: 60px;
+	height: 60px;
+	background: rgba(0, 0, 0, .5) url(../img/index/left.png) no-repeat center center;
+	background-size: 22% 39%;
+	z-index: 9;
+	cursor: pointer;
+	text-indent: -9999em;
+	border-radius: 50%;
+}
+
+.swiper1 .swiper_right {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	background: rgba(0, 0, 0, .5) url(../img/index/right.png) no-repeat center center;
+	background-size: 22% 39%;
+	z-index: 9;
+	cursor: pointer;
+	text-indent: -9999em;
+	border-radius: 50%;
+}
+
+
+.swiper1 .swiper_right:hover,
+.swiper1 .swiper_left:hover {
+	background-color: rgba(0, 0, 0, .8)
+}
+
+.swiper-pagination-bullet {
+	display: inline-block;
+	cursor: pointer;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 3px solid #555;
+	margin: 0 5px;
+}
+
+/* 安全距离 */
+.container {
+	width: 1210px;
+	margin: 0 auto;
+	/* padding-bottom: 60px; */
+}
+
+.floor {
+	box-sizing: border-box;
+	padding-top: 63px;
+}
+
+.floor .title {
+	margin-bottom: 20px;
+}
+
+.floor .title .tit_lef {
+	font-size: 24px;
+	color: #444;
+}
+
+.floor .title .tit_rgt a>span {
+	vertical-align: middle;
+}
+
+.floor .title .tit_rgt a .i_riht {
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.floor .list {
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+}
+
+.floor .list li {
+	float: left;
+	width: calc((100% - 48px) / 5);
+	height: 100%;
+	margin-right: 12px;
+	cursor: pointer;
+	padding: 25px 20px;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+.floor .list li:last-child {
+	margin-right: 0;
+}
+
+.floor .list li a {
+	display: block;
+	position: relative;
+}
+
+.floor .list li a .hot {
+	position: absolute;
+	right: -8px;
+	top: -25px;
+
+}
+
+.floor .list li a .new {
+	position: absolute;
+	right: -10px;
+	top: -25px;
+}
+
+.floor .list li a .oled {
+	position: absolute;
+	right: -10px;
+	top: -25px;
+}
+
+.floor .list li a .hot img,
+.floor .list li a .new img,
+.floor .list li a .oled img {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+}
+
+
+.floor .list li a .li_img img {
+	width: 190px;
+	height: 190px;
+	display: inline-block;
+}
+
+.floor .list li a .li_name {
+	font-size: 16px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.floor .list li a .li_descibe {
+	width: 100%;
+	color: #999;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 12px;
+	line-height: 28px;
+}
+
+.floor .list li a .li_price {
+	font-size: 16px;
+	color: #2e8ae4;
+	padding-top: 5px;
+}
+
+.floor .list li>div {
+	position: relative;
+}
+
+.floor .list li .li_cover {
+	position: absolute;
+	left: -21px;
+	top: 112%;
+	border: 0;
+	background: linear-gradient(to right, #18ebe2, #3084e5);
+	color: #FFF;
+	width: 234px;
+	padding: 22px 13px;
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
+
+.floor .list li .li_cover>span {
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+.floor .list li .li_cover>a {
+	width: 110px;
+	text-align: center;
+	height: 29px;
+	line-height: 29px;
+	background: linear-gradient(to right, #ff29a7, #0060ff);
+	display: inline-block;
+	margin-left: 13px;
+	color: white;
+	border-radius: 26px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+.floor .list li .li_cover>a:hover {
+	color: white;
+}
+
+.floor .list>li:hover {
+	/* box-shadow: 1px -1px 14px 2px rgba(0, 0, 0, 0.1); */
+	box-shadow: -1px 0px 14px 7px rgba(0, 0, 0, 0.1);
+	transition: all 0.5s;
+}
+
+/* floor2 */
+.floor2 .list2 li:first-child {
+	width: 475px;
+	padding: 0 0 25px 0;
+}
+
+.floor2 .list2 li:first-child a .li_img img {
+	width: 475px;
+	height: 240px;
+	display: inline-block;
+}
+
+.floor .list2 li:first-child a .oled {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+}
+
+.floor .list2 li:first-child a .li_name,
+.floor .list2 li:first-child a .li_descibe,
+.floor .list2 li:first-child a .li_price {
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+
+.floor .list2 li:first-child a .li_name,
+.floor .list2 li:first-child a .li_price {
+	display: inline;
+	line-height: 42px;
+}
+
+.floor .list2 li:first-child a .li_price {
+	padding-left: 20%;
+}
+
+.floor .list2 li:first-child a .li_descibe {
+	line-height: 12px;
+}
+
+.floor .list2 li:first-child .li_cover {
+	position: absolute;
+	left: 0px;
+	top: 110%;
+	border: 0;
+	background: linear-gradient(to right, #18ebe2, #3084e5);
+	color: #FFF;
+	padding: 25px 27px;
+	box-sizing: border-box;
+	transition: all 0.5s;
+	width: 100%;
+	text-align: center;
+}
+
+.floor .list_li .li_first .li_cover>a {
+	height: 35px;
+	line-height: 35px;
+
+}
+
+/* 精彩视频 */
+.floor10 .video {
+	width: 100%;
+	height: 232px;
+}
+
+.floor10 .video>li {
+	width: calc((100% - 36px) / 4);
+	height: 100%;
+	margin-right: 12px;
+	background-color: white;
+	float: left;
+}
+
+.floor10 .video>li:last-child {
+	margin-right: 0;
+}
+
+.floor10 .video li .video_img {
+	position: relative;
+}
+
+.floor10 .video li .video_img img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	cursor: pointer;
+}
+
+.floor10 .video li .video_img .video_cover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	text-align: center;
+
+}
+
+.video li .video_img .video_cover .v_play {
+	font-size: 32px;
+	color: #d4d5d6;
+	margin-right: 12px;
+	transition: all, .5s;
+	position: absolute;
+	bottom: 10px;
+	right: 0px;
+}
+
+.floor10 .video li .video_text {
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	color: #333;
+	font-size: 16px;
+	transition: all, .5s;
+
+}
+
+.floor10 .video>li:hover {
+	box-shadow: -1px 1px 10px 4px rgba(0, 0, 0, 0.1);
+	transition: all 0.5s;
+}
+
+.floor10 .video li:hover .video_text,
+.floor10 .video li:hover .video_cover .v_play {
+	color: #2e8ae4;
+}
+
+/* foot */
+/* .foot {
+	padding-top: 30px;
+}
+ */

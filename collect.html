@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的收藏</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/address.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/menubar.css" />
+		<link rel="stylesheet" type="text/css" href="css/collect.css" />
+	</head>
+	<body>
+		<!-- 引入头部文件 -->
+		<div class="headerAll"></div>
+		<!-- 二级菜单 -->
+		<div class="menubox detail_menu"></div>
+		<!-- 个人中心 -->
+		<div class="usercenter">
+			<div class="list_st">
+				<div class="container st">首页 <span> / 我的收藏</span></div>
+				<div class="content container ">
+					<div class="user_lef fl">
+						<div class="user_lef_tit">
+							用户中心
+						</div>
+						<ul class="user_list">
+							<li class="u_li active"><a href="#">个人信息</a></li>
+							<li class="u_li"><a href="myoder.html">我的订单</a></li>
+							<li class="u_li"><a href="#">优惠券</a></li>
+							<li class="u_li"><a href="address.html">我的地址</a></li>
+							<li class="u_li"><a href="#">我的收藏</a></li>
+						</ul>
+					</div>
+					<!-- 右侧 -->
+					<div class="user_rgt fl">
+						<div class="user_rgt_tit">
+							我的收藏
+						</div>
+						<!-- 列表盒子 -->
+						<ul class="col_list clearfix">
+							<li class="li_item">
+								<a href="javascript:void(0);">
+									<div class="col_photo"><img src="img/carlist/ia_200000008.jpg"></div>
+									<div class="col_txt">企鹅极光盒子二代</div>
+									<div class="col_price">￥999</div>
+								</a>
+								<div class="col_button">
+									<a class="col_delete" href="javascript:void(0);">删除</a>
+									<a class="col_detail" href="detail.html">查看详情</a>
+								</div>
+							</li>
+							<li class="li_item">
+								<a href="javascript:void(0);">
+									<div class="col_photo"><img src="img/index/ia_100000026.jpg"></div>
+									<div class="col_txt">企鹅极光盒子二代</div>
+									<div class="col_price">￥999</div>
+								</a>
+
+								<div class="col_button">
+									<a class="col_delete" href="javascript:void(0);">删除</a>
+									<a class="col_detail" href="detail.html">查看详情</a>
+								</div>
+							</li>
+
+							<li class="li_item">
+								<a href="javascript:void(0);">
+									<div class="col_photo"><img src="img/list/201906140508352798.jpg"></div>
+									<div class="col_txt">企鹅极光盒子二代</div>
+									<div class="col_price">￥999</div>
+								</a>
+								<div class="col_button">
+									<a class="col_delete" href="javascript:void(0);">删除</a>
+									<a class="col_detail" href="detail.html">查看详情</a>
+								</div>
+							</li>
+							<li class="li_item">
+								<a href="javascript:void(0);">
+									<div class="col_photo"><img src="img/list/ia_200000017.jpg"></div>
+									<div class="col_txt">企鹅极光盒子二代</div>
+									<div class="col_price">￥999</div>
+								</a>
+								<div class="col_button">
+									<a class="col_delete" href="javascript:void(0);">删除</a>
+									<a class="col_detail" href="detail.html">查看详情</a>
+								</div>
+							</li>
+							<li class="li_item">
+								<a href="javascript:void(0);">
+									<div class="col_photo"><img src="img/list/ia_200000003.jpg"></div>
+									<div class="col_txt">企鹅极光盒子二代</div>
+									<div class="col_price">￥999</div>
+								</a>
+								<div class="col_button">
+									<a class="col_delete" href="javascript:void(0);">删除</a>
+									<a class="col_detail" href="detail.html">查看详情</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 引入底部 -->
+		<div class="foot"></div>
+
+		<script src="js/lib/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/personal-info.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 二级菜单
+			$('.menubox').load('publicpage/menubar_detail.html', function() {
+				//导航条
+			})
+			$('.user_list li').hover(function() {
+				$(this).addClass('active');
+				$(this).siblings('li').removeClass('active');
+			})
+			//删除
+			$('.col_list').on('click', '.col_delete', function() {
+				$(this).parent('.col_button').parent('.li_item').remove();
+			})
+		</script>
+	</body>
+</html>

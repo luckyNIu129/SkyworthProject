@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/address.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/Validform/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/menubar.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal-info.css" />
+	</head>
+	<body>
+		<!-- 引入头部文件 -->
+		<div class="headerAll"></div>
+		<!-- 二级菜单 -->
+		<div class="menubox detail_menu"></div>
+		<!-- 个人中心 -->
+		<div class="usercenter">
+			<div class="list_st">
+				<div class="container st">首页 <span> / 个人信息</span></div>
+				<div class="content container ">
+					<div class="user_lef fl">
+						<div class="user_lef_tit">
+							用户中心
+						</div>
+						<ul class="user_list">
+							<li class="u_li active"><a href="#">个人信息</a></li>
+							<li class="u_li"><a href="myoder.html">我的订单</a></li>
+							<li class="u_li"><a href="#">优惠券</a></li>
+							<li class="u_li"><a href="address.html">我的地址</a></li>
+						</ul>
+					</div>
+					<div class="user_rgt fl">
+						<div class="user_rgt_tit">
+							个人信息
+						</div>
+						<div class="tab_list clearfix">
+							<div class="tab_left fl">
+								<div class="tab_name">Lucky牛</div>
+								<div class="tab_info">会员类型：普通类型</div>
+							</div>
+							<ul class="tab_rgt fr">
+								<li>
+									<a href="myoder.html">
+										<div class="img_item pay">
+											<img src="img/personal-info/p1.png">
+										</div>
+										<div>待付款（1）</div>
+									</a>
+								</li>
+								<li>
+									<a href="myoder.html">
+										<div class="img_item goods">
+											<img src="img/personal-info/p2.png">
+										</div>
+										<div>待收货（1）</div>
+									</a>
+								</li>
+								<li>
+									<a href="myoder.html">
+										<div class="img_item appraise">
+											<img src="img/personal-info/p3.png">
+										</div>
+										<div>待评价（1）</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- 个人详细信息 -->
+						<form id="personalform">
+
+
+							<div class="pe_cont clearfix">
+								<div class="pe_item fl pe_lef">
+									<div class="pe_tit">基本信息</div>
+									<div class="pe_basic">
+										<div>
+											<label>姓名:</label>
+											<input type="text" datatype='*6-16' errormsg='请输入6到16位任意字符!' name="" id="p_name" placeholder="未填写" value="" />
+										</div>
+										<div class="sex-button">
+											<label>性别:</label>
+											<div class="sex">
+												<img src="img/personal-info/boy_icon.png">
+												男
+											</div>
+											<div class="sex blue">
+												<img src="img/personal-info/girl_icon.png">
+												女
+											</div>
+										</div>
+										<div>
+											<label>手机:</label>
+											<input type="text" datatype='/0?(13|14|15|17|18|19)[0-9]{9}/' errormsg='请输入正确的手机号!' name="" id="p_phone"
+											 placeholder="未填写" value="" />
+										</div>
+										<div>
+											<label>邮箱:</label>
+											<input type="text" datatype='e' errormsg='请输入正确的邮箱!' name="" id="p_email" placeholder="未填写" value="" />
+										</div>
+
+									</div>
+								</div>
+								<div class="pe_item fl pe_rgt">
+									<div class="pe_tit">基本信息</div>
+									<div class="pe_basic">
+										<div>
+											<label>QQ:</label>
+											<input type="text" datatype='/[1-9]([0-9]{5,11})/' errormsg='请输入正确的QQ号码!' name="" id="p_qq" placeholder="未填写"
+											 value="" />
+										</div>
+										<div>
+											<label>微信号:</label>
+											<input type="text" datatype='/0?(13|14|15|17|18|19)[0-9]{9}/' errormsg='请输入正确微信号码!' name="" id="p_wx"
+											 placeholder="未填写" value="" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 提交 -->
+							<div class="pe_button">
+								<button type="submit" class="submitBtn">保存</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 引入底部 -->
+		<div class="foot"></div>
+
+		<script src="js/lib/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/personal-info.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/Validform/js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/personal-info.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 二级菜单
+			$('.menubox').load('publicpage/menubar_detail.html', function() {
+				//导航条
+			})
+
+			$('.user_list li').hover(function() {
+				$(this).addClass('active');
+				$(this).siblings('li').removeClass('active');
+			})
+		</script>
+	</body>
+</html>

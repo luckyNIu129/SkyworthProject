@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+	</head>
+	<body>
+		<!-- 头 -->
+		<div class="header clearfix">
+			<div class="register">
+				<div class="lo_logo fl"><img src="img/login/logo.png"></div>
+				<div class="lo_register fr">已有账号？<a href="login.html"> 请登录</a> </div>
+			</div>
+		</div>
+		<!--  -->
+		<!-- 尾部 -->
+		<div class="re_cont">
+			<div class="register re_wrap">
+				<div class="re_tit">
+					<div class="re_line">
+						<div class="re_bar"></div>
+					</div>
+					<ul class="re_list clearfix">
+						<li>
+							<span class="blue1">1</span>
+							<p>验证手机号</p>
+						</li>
+						<li>
+							<span class="blue2">2</span>
+							<p>填写账号信息</p>
+						</li>
+						<li>
+							<span class="blue3">3</span>
+							<p>注册成功</p>
+						</li>
+					</ul>
+				</div>
+				<!-- 注册 -->
+				<!-- <form  id="re_form"> -->
+					<div class="re_box">
+						<!-- 验证码 -->
+						<div class="input_block">
+							<div class="step_input  code_input">
+								<i class="fa fa-keyboard-o" aria-hidden="true"></i>
+								<input type="text" id="code" placeholder="请输入图形验证码" value="" class="login_input_ma ma_ter">
+								<div class="re_box">
+									<img src="img/login/22028.png">
+									<span>换一张</span>
+								</div>
+							</div>
+
+							<div class="login_tip">
+								<i class="fa fa-info-circle" aria-hidden="true"></i>
+								请输入图形验证码
+							</div>
+						</div>
+						<!-- 手机号 -->
+						<div class="input_block">
+							<div class="step_input phone_input">
+								<i class="fa fa-mobile" aria-hidden="true"></i>
+								<input type="text" id="phone" placeholder="手机号码" value="" class="login_input_ma ma_phone">
+							</div>
+
+							<div class="login_tip">
+								<i class="fa fa-info-circle" aria-hidden="true"></i>
+								验证完成后，可以用此手机号进行登录和找回密码。
+							</div>
+						</div>
+						<!-- 手机验证码 -->
+						<div class="input_block">
+							<div class="step_input vertify_input">
+								<i class="fa fa-keyboard-o" aria-hidden="true"></i>
+								<input type="text" id="phonecode" placeholder="手机验证码" value="" class="login_input_ma ma_vertify">
+								<span class="date" id='date_code'>发送验证码</span>
+							</div>
+							<div class="login_tip">
+								<i class="fa fa-info-circle" aria-hidden="true"></i>
+								验证码已发送，请在120秒内输入正确的验证码
+							</div>
+						</div>
+						<div class="bot_btn">
+							<button class="step-next" type='submit' id="nextBtn">下一步</button>
+							<button class="step-next" id="nextBtn2">下一步</button>
+						</div>
+					</div>
+				<!-- </form> -->
+
+			</div>
+		</div>
+		<!--footer -->
+		<div class="login_footer">
+			<div class="login_foot">
+				<ul>
+					<li>关于我们</li>
+					<li>|</li>
+					<li>联系我们</li>
+					<li>|</li>
+					<li>自助服务</li>
+					<li>|</li>
+					<li>友情链接</li>
+					<li>|</li>
+					<li>关注我们</li>
+					<li>|</li>
+					<li>购买流程</li>
+					<li>|</li>
+					<li>安装调试</li>
+					<li>|</li>
+					<li>税票制度</li>
+				</ul>
+				<p>ICP备案证号：粤ICP备09157852号</p>
+			</div>
+		</div>
+
+		<script src="js/lib/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/register.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+</html>

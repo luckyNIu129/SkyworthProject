@@ -1,0 +1,60 @@
+.slideTxtBox {
+	width: 380px;
+	text-align: center;
+}
+
+.slideTxtBox .hd {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px 0 20px;
+	position: relative;
+}
+
+.slideTxtBox .hd ul {
+	float: left;
+	position: absolute;
+	left: 20px;
+	top: -1px;
+	height: 32px;
+	font-size: 20px;
+}
+
+.slideTxtBox .hd ul li {
+	float: left;
+	padding: 25px 0 0 95px;
+	cursor: pointer;
+}
+
+
+.slideTxtBox .hd ul li.on {
+	height: 30px;
+	border-bottom: 2px solid #fff;
+}
+
+/* 身体 */
+.slideTxtBox .bd ul {
+	padding: 15px;
+	zoom: 1;
+
+}
+
+.slideTxtBox .bd li {
+	height: 24px;
+	line-height: 24px;
+	padding: 40px;
+	width: 328px;
+}
+
+/* 文本框 */
+.slideTxtBox .bd li .txt1,
+.slideTxtBox .bd li .txt2 {
+	width: 328px;
+	color: black;
+	font-size: 14px;
+	height: 46px;
+	line-height: 46px;
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid lightsteelblue;
+	margin-left: 33px;
+}

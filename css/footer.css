@@ -1,0 +1,154 @@
+.footer {
+	width: 100%;
+	background: #FFFFFF;
+	font-size: 12px;
+	/* margin-top: 55px; */
+	color: #666;
+}
+
+.footer .link_wrap {
+	background: #f6f6f6;
+}
+
+.footer .link_bg {
+	padding: 45px 0;
+}
+
+.footer ul.link_cont {
+	margin-right: 205px;
+	float: left;
+}
+
+.footer ul.link_cont li {
+	line-height: 25px;
+	color: #666;
+}
+
+.footer ul.link_cont li a {
+	color: #666;
+}
+
+.footer span.link_title {
+	font-size: 16px;
+	padding-bottom: 15px;
+	display: block;
+}
+
+.footer ul.link_cont.link_phone {
+	margin-right: 0;
+	float: right;
+}
+
+.footer ul.link_phone .link_title {
+	color: #2e8ae4;
+	font-size: 20px;
+	padding: 0;
+}
+
+.footer ul.link_phone .link_service {
+	width: 125px;
+	height: 35px;
+	line-height: 32px;
+	color: #FFFFFF;
+	border-radius: 50px;
+	text-align: center;
+	margin-top: 20px;
+	background: linear-gradient(to right, #18ebe2, #3084e5);
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.footer ul.link_cont li.link_service a {
+	color: #FFFFFF;
+}
+
+.footer ul.link_phone .link_service i {
+	font-size: 20px;
+	vertical-align: -4px;
+	margin-right: 4px;
+}
+
+.foot_wrap {
+	background: #eee;
+}
+
+.foot_cont {
+	padding: 10px 0;
+}
+
+.foot_right {
+	float: right;
+	margin-top: 5px;
+}
+
+.font_left {
+	color: #666;
+	line-height: 20px;
+}
+
+.font_left a {
+	display: inline-block;
+}
+
+/* 右侧悬浮 */
+.floatNav {
+	z-index: 999;
+	position: fixed;
+	bottom: 30px;
+	right: 0;
+	width: 48px;
+	text-align: center;
+	background-color: #ffffff;
+	border: 1px solid #0396e6;
+	border-bottom: 0px none;
+}
+
+.floatNav a.float {
+	width: 48px;
+	height: 48px;
+	border-bottom: 1px solid #0396e6;
+	display: block;
+}
+
+.floatNav a.float span {
+	width: 48px;
+	height: 48px;
+	display: block;
+	background: url(../img/index/ia_100000064.png) -48px top;
+}
+
+.floatNav a.float span.afterSales {
+	background-position: -48px -49px;
+}
+
+.floatNav a.float:hover span.afterSales {
+	background-position: left -49px;
+}
+
+.floatNav a.float span.backTop_ic {
+	background-position: -48px -196px;
+}
+
+.floatNav a.float:hover span.backTop_ic {
+	background-position: left -196px;
+}
+
+.floatNav a.float:hover span.preSales {
+	background-position: left top;
+}
+
+.floatNav a.btnBackTop {
+	display: none;
+}
+
+.floatNav a.btnBackTop.active::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:52px;
+	height: 1px;
+	background-color: #0396e6;
+
+}

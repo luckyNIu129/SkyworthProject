@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录页面</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+	<body>
+		<div class="login">
+			<div class="content">
+				<div class="lo_title clearfix">
+					<div class="lo_logo fl"><img src="img/login/logo.png"></div>
+					<div class="lo_register fr">没有账号？<a href="register.html"> 请注册</a> </div>
+				</div>
+				<!-- 中间 -->
+				<div class="lo_cont clearfix">
+					<div class="lo_img fl">
+						<img src="img/login/login_ad.png">
+					</div>
+					<div class="lo_login fl">
+						<div class="lo_members">
+							会员登录
+						</div>
+						<form class="form" id="lo_form" action="index.html">
+							<div>
+								<input type="text" datatype='username' errormsg='用户名不正确!' placeholder="邮箱/手机号/用户名" nullmsg="用户名不能为空 !" id="f_name"
+								 value="" />
+							</div>
+							<div>
+								<input type="password" datatype='/^[a-z0-9]{4,16}$/' errormsg='6-20位字母数字组合!' placeholder="请输入登录密码" nullmsg="密码不能为空 " id="f_pass "
+								 value="" />
+							</div>
+							<div class="lo_secial">
+								<input type="text" datatype='/(?!0000)[0-9]{4}/' placeholder="请输入验证码" nullmsg="验证码不能为空!" class="f_code" id="f_code" value="" />
+								<div class="clearfix lo_cle">
+									<div class="lo_img fl" id="v_container"></div>
+									<div class="my_button fl" id="my_button">换一张</div>
+								</div>
+							</div>
+							<div>
+								<button type="submit" class="mysubmit" return false >登录</button>
+							</div>
+							<div class="lo_last clearfix">
+								<div class="fl">
+									<input type="checkbox"  name="" id="check" value="" />
+									<label for="check">30天内记住我的登录信息</label>
+								</div>
+								<div class="fr">
+									<a href="javascript:void(0);">忘记密码?</a>
+									<a href="register.html"> / 注册</a>
+								</div>
+							</div>
+
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<!--footer -->
+			<div class="login_footer">
+				<div class="login_foot">
+					<ul>
+						<li>关于我们</li>
+						<li>|</li>
+						<li>联系我们</li>
+						<li>|</li>
+						<li>自助服务</li>
+						<li>|</li>
+						<li>友情链接</li>
+						<li>|</li>
+						<li>关注我们</li>
+						<li>|</li>
+						<li>购买流程</li>
+						<li>|</li>
+						<li>安装调试</li>
+						<li>|</li>
+						<li>税票制度</li>
+					</ul>
+					<p>ICP备案证号：粤ICP备09157852号</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/lib/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/verify/js/gVerify.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/Validform/js/Validform_v5.3.2_min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/login.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车列表</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/menubar.css" />
+		<link rel="stylesheet" type="text/css" href="css/carlist.css" />
+	</head>
+	<body>
+		<!-- 引入头部文件 -->
+		<div class="headerAll"></div>
+		<!-- 二级菜单 -->
+		<div class="menubox detail_menu"></div>
+		<!-- 购物车列表 -->
+		<div class="carlist">
+			<div class="container">
+				<div class="car_order">
+					<ul class="car_title clearfix">
+						<li class='tit_input fl'>
+							<div class="checkbox">
+								<input type="checkbox" class="checkAll" />
+							</div>
+						</li>
+						<li class='tit_info fl'>商品信息</li>
+						<li class='tit_price fl'>单价</li>
+						<li class='tit_num fl'>数量</li>
+						<li class='tit_money fl'>金额</li>
+						<li class='tit_opera fl'>操作</li>
+					</ul>
+					<!-- 商品详情 -->
+					<div class="ul_order">
+						<!-- <ul class="order_lists clearfix">
+							<li class='list_input fl'>
+								<div class="checkbox">
+									<input type="checkbox" class="odrcheck" />
+								</div>
+							</li>
+							<li class="list_con">
+								<div class="list_img">
+									<a href="#">
+										<img src="img/carlist/ia_200000015.jpg">
+									</a>
+								</div>
+								<div class="list_text">
+									<a href="#">55H6(送影视年卡、挂架)</a>
+									<p class="p_padding">全面屏|超解像技术|防蓝光|2+32G|AI语音|运动补偿...</p>
+									<p class="p_padding">配送公司：创维-RGB电子有限公司</p>
+								</div>
+							</li>
+							<li class="list_price">
+								<p class="price">￥<span>1.00</span></p>
+								<p class="text_de">￥<span>3599.00</span></p>
+							</li>
+							<li class="list_amount">
+								<div class="amount_box">
+									<a class="reduce">-</a>
+									<input type="text" class="sum" value="1">
+									<a class="plus">+</a>
+								</div>
+							</li>
+							<li class="list_sum">
+								<p class="sum_price">￥<span>1.00</span></p>
+							</li>
+							<li class="list_op">
+								<p class="del"><a href="#" class="delBtn">移除商品</a></p>
+							</li>
+						</ul> -->
+					</div>
+					<div class="bar-wrapper">
+						<div class="bar-left">
+							<div class="content_all">
+								<div class="checkbox">
+									<input type="checkbox" id='cancel_c' class="cancel_check" />
+								</div>
+								<label class="cancel_all" for="cancel_c">取消全选</label>
+							</div>
+							<div class="content_all goon_shop"><a href="index.html">继续购物</a></div>
+						</div>
+						<div class="bar-right">
+							<div class="piece">已选商品<strong class="piece_num piece_blue" id="cnum">0</strong>件</div>
+							<div class="totalMoney">共计:<strong class="total_text" id="cprice">￥0.00</strong></div>
+							<div class="calBtn"><a class="btn_sty">结算</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="null_cover">
+					<div class="null_order">
+						<div class="null_img"></div>
+						<div class="null_rgt">
+							<div class="text">您的购物车还是空的！</div>
+							<div class="goby"><a href="index.html">马上去购物</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 引入底部 -->
+		<div class="foot"></div>
+		<script src="js/lib/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/carlist.js" type="text/javascript" charset="utf-8"></script>
+
+
+	</body>
+</html>

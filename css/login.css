@@ -1,0 +1,184 @@
+/* .login {
+	width: 100%;
+	margin: 0 auto;
+}
+ */
+.login .content {
+	width: 1090px;
+	margin: 0 auto;
+
+}
+
+.login .lo_title {
+	width: 100%;
+	height: 100px;
+	background: #FFF;
+}
+
+.login .lo_title img {
+	width: 266px;
+	height: auto;
+	margin-top: 35px;
+}
+
+.login .lo_title .lo_register {
+
+	line-height: 100px;
+	font-size: 14px;
+
+}
+
+.lo_title .lo_register>a {
+	color: #e83733;
+	display: inline-block;
+}
+
+.lo_title .lo_register>a:hover {
+	color: #e83733;
+}
+
+.login .lo_cont {
+	margin: 10px auto;
+	box-shadow: 0 0 50px -10px rgba(0, 0, 0, .2);
+	height: 550px;
+}
+
+.lo_title .lo_cont img {
+	width: 690px;
+	height: 550px;
+	display: block;
+}
+
+/* 中间 */
+.lo_cont .lo_login {
+	padding: 30px;
+	width: calc(100% - 690px);
+	box-sizing: border-box;
+}
+
+
+.lo_cont .lo_login .lo_members {
+	height: 40px;
+	margin: 20px 0 30px 0;
+	font-size: 24px;
+	color: #555;
+}
+
+.form>div {
+	margin-top: 15px;
+}
+
+.form>div>input {
+	width: 310px;
+	height: 45px;
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	padding: 0 10px;
+	font-size: 14px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.form .lo_secial {
+	width: 310px;
+	height: 45px;
+	border: 1px solid #e5e5e5;
+	position: relative;
+	line-height: 45px;
+}
+
+.form .lo_secial .f_code {
+	width: 150px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 0;
+}
+
+.form .lo_secial .lo_cle {
+	height: 45px;
+	line-height: 45px;
+	padding-top: 7px;
+	box-sizing: border-box;
+}
+
+.form .lo_secial .lo_img {
+	margin-left: 154px;
+	/* padding-top: 7px; */
+}
+
+
+.form .lo_secial .my_button {
+	font-size: 14px;
+	vertical-align: middle;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.form>div .mysubmit {
+	background: #2e8ae4;
+	width: 100%;
+	border: 0;
+	color: #fff;
+	transition: all, .5s;
+	margin-top: 30px;
+	height: 45px;
+	line-height: 45px;
+	outline: 0;
+}
+
+.form>div>button:hover {
+	opacity: .9;
+	cursor: pointer;
+}
+
+.form .lo_last .fl>input {
+	vertical-align: middle;
+}
+
+.form .lo_last .fl>label {
+	color: #999999;
+	cursor: pointer;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+.form .lo_last .fr>a {
+	color: #555555;
+	cursor: pointer;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+/* footer */
+.login_footer {
+	font-size: 12px;
+	width: 100%;
+	height: 100px;
+	background: #FFF;
+}
+
+.login_foot {
+	width: 1210px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.login_foot ul {
+	height: 20px;
+	padding: 30px 0 5px 0;
+	display: inline-block;
+}
+
+.login_foot ul li {
+	float: left;
+	padding: 0 5px;
+	color: #999;
+	cursor: pointer;
+
+}
+
+.login_foot p {
+	color: #999;
+}
+

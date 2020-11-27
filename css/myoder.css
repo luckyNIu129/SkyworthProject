@@ -1,0 +1,221 @@
+.usercenter .content {
+	min-height: 600px;
+}
+
+.user_rgt .user_rgt_tit {
+	height: 40px;
+	line-height: 40px;
+	vertical-align: top;
+}
+
+.user_rgt_tit .o_des {
+	font-size: 12px;
+	color: #999;
+	padding-left: 10px;
+
+}
+
+.user_rgt_tit .o_search {
+	width: 260px;
+}
+
+.user_rgt_tit .o_search .search_input {
+	width: 220px;
+	height: 35px;
+	padding: 0 10px;
+	border: 1px solid #eee;
+	vertical-align: middle;
+	outline: none;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+
+.o_search .search_input::-webkit-input-placeholder {
+	font-size: 12px;
+}
+
+.user_rgt_tit .o_search .searchBtn {
+	margin: 1px 0 0 -5px;
+	height: 35px !important;
+	background: #FFF;
+	border: 1px solid #eee;
+	vertical-align: -1px;
+	width: 40px;
+	color: #666;
+	outline: none;
+}
+
+.user_rgt_tit .o_search .searchBtn:hover i {
+	color: #2e8ae4;
+	cursor: pointer;
+}
+
+/* 头部列表选项卡 */
+.user_rgt .tit_list {
+	height: 40px;
+	margin: 20px 0 30px 0;
+	line-height: 40px;
+}
+
+.tab .tit_list>li {
+	float: left;
+	width: 90px;
+	font-size: 14px;
+}
+
+.tit_list>li.add_active {
+	position: relative;
+}
+
+.tit_list>li.add_active::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 5px;
+	width: 43px;
+	height: 2px;
+	background-color: #06e;
+}
+
+.user_rgt .tit_list>li a {
+	display: inline-block;
+}
+
+.user_rgt .tit_list>li>a:hover {
+	text-decoration: underline;
+}
+
+.user_rgt .tit_list>li>.a_pay {
+	position: relative;
+}
+
+.tit_list>li>.a_pay .add_pay {
+	position: absolute;
+	top: 5px;
+	right: -22px;
+	color: white;
+	line-height: 17px;
+	text-align: center;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #e83632;
+	font-size: 12px;
+}
+
+/* 下部 */
+
+.user_rgt .cont_list .cont_li {}
+
+.cont_list .cont_li .lis_item {
+	border: 1px solid #eee;
+	padding: 15px;
+	clear: both;
+	margin-bottom: 15px;
+}
+
+.cont_list .cont_li {
+	display: none;
+}
+
+.cont_list .cont_li.add_active {
+	display: block;
+}
+
+.cont_list .cont_li:first-child {
+	display: block;
+}
+
+.cont_list .cont_li .li_bar_lef {
+	width: 60%;
+}
+
+.cont_li .li_bar {
+	height: 40px;
+}
+
+.cont_li .li_bar_lef>span {
+	padding-right: 17px;
+	color: #666;
+}
+
+.cont_list .cont_li .li_bar_rgt {
+	width: 40%;
+	text-align: right;
+}
+
+.cont_li .li_bar_rgt>span {
+	padding-left: 20px;
+	color: #666;
+}
+
+/* 下部货物 */
+.cont_li .li_goods .goods_lef {
+	width: 60%;
+}
+
+.li_goods .goods_lef .goods_item {
+	margin-bottom: 10px;
+}
+
+.li_goods .goods_lef .goods_item a {
+	display: inline-block;
+}
+
+.goods_lef .goods_item a>img {
+	width: 67px;
+	height: 67px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.goods_lef .goods_item .item_word {
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+.goods_lef .goods_item .item_word a {
+	color: #333;
+	padding: 3px 0;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.goods_lef .goods_item .item_word a:hover {
+	color: #2e8ae4;
+}
+
+.goods_lef .goods_item .item_word>span {
+	display: block;
+	line-height: 19px;
+	color: #999;
+}
+
+.cont_li .li_goods .goods_rgt {
+	width: 35%;
+	text-align: right;
+}
+
+.li_goods .goods_rgt button {
+	line-height: 29px;
+	background: #eee;
+	width: 72px;
+	text-align: center;
+	transition: all, .5s;
+	border-radius: 3px;
+	font-size: 12px;
+	outline: none;
+	border: 0;
+	margin-left: 7px;
+	cursor: pointer;
+}
+
+.li_goods .goods_rgt .order_pay {
+	background: #e83632;
+	color: #FFF;
+}
+
+.li_goods .goods_rgt button:hover {
+	opacity: 0.8;
+}

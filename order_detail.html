@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>订单详情页</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/font-awesome-4.7.0/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/menubar.css" />
+		<link rel="stylesheet" type="text/css" href="css/address.css" />
+		<link rel="stylesheet" type="text/css" href="css/order_detail.css" />
+	</head>
+	<body>
+		<!-- 引入头部文件 -->
+		<div class="headerAll"></div>
+		<!-- 二级菜单 -->
+		<div class="menubox detail_menu"></div>
+		<!-- 订单详情页面 -->
+		<div class="usercenter">
+			<div class="list_st">
+				<div class="container st">首页 / 订单详情<span> / 订单详情 </span></div>
+			</div>
+			<div class="content container ">
+				<div class="user_lef fl">
+					<div class="user_lef_tit">
+						用户中心
+					</div>
+					<ul class="user_list">
+						<li class="u_li"><a href="personal-info.html">个人信息</a></li>
+						<li class="u_li  active"><a href="#">我的订单</a></li>
+						<li class="u_li"><a href="#">优惠券</a></li>
+						<li class="u_li"><a href="address.html">我的地址</a></li>
+					</ul>
+				</div>
+				<div class="user_rgt fl">
+					<!-- 头部标题 -->
+					<div class="user_rgt_tit clearfix">
+						<div class="o_tit">
+							订单详情
+						</div>
+						<div class="o_number">
+							订单号：G202009111053552295 <span class="o_time">下单时间：</span> <span>2020/9/11 10:53:55</span>
+						</div>
+						<div class="o_btn">
+							<span class="o_order o_blue">取消订单</span>
+							<span class="o_order">等待支付</span>
+						</div>
+						<!-- 流程 -->
+						<div class="o_cont">
+							<div class="bar"></div>
+							<div class="bar2"></div>
+							<ul class="o_process clearfix">
+								<li>
+									<div class="li_step">
+										<div class="step_bg step_one">
+											<img src="img/order_detail/p1.png">
+										</div>
+									</div>
+									<div class="li_time">
+										<p class="steps_title">提交订单</p>
+										<p>2020-09-11</p>
+										<p>10:53:55</p>
+									</div>
+								</li>
+								<li>
+									<div class="li_step">
+										<div class="step_bg">
+											<img src="img/order_detail/p2.png">
+										</div>
+									</div>
+									<div class="li_time">
+										<p class="steps_title">付款成功</p>
+										<p>2020-09-11</p>
+										<p>10:53:55</p>
+									</div>
+								</li>
+								<li>
+									<div class="li_step">
+										<div class="step_bg">
+											<img src="img/order_detail/p3.png">
+										</div>
+									</div>
+									<div class="li_time">
+										<p class="steps_title">等待发货</p>
+									</div>
+								</li>
+								<li>
+									<div class="li_step">
+										<div class="step_bg">
+											<img src="img/order_detail/p3.png">
+										</div>
+									</div>
+									<div class="li_time">
+										<p class="steps_title">等待收货</p>
+									</div>
+								</li>
+								<li>
+									<div class="li_step">
+										<div class="step_bg">
+											<img src="img/order_detail/p5.png">
+										</div>
+									</div>
+									<div class="li_time">
+										<p class="steps_title">订单完成</p>
+										<p>2020-09-11</p>
+										<p>10:53:55</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 下部 -->
+					<div class="o_tab">
+						<div class="log_title">物流信息</div>
+						<div class="log_wrap clearfix">
+							<div class="log_wrap_left fl">
+								<div class="log_pro_name">65H10(送腾讯影视季卡、挂架)</div>
+								<dl class="dl_log clearfix">
+									<dt><a target="_blank" href="#">
+											<img src="img/carlist/ia_200000008.jpg" onerror="this.src='../nopic.gif'"></a></dt>
+									<dd>承运人：</dd>
+									<dd>承运单号：</dd>
+								</dl>
+							</div>
+							<div class="log_wrap_right fr">
+								<div class="dl_scoll" id="wl_" style="padding: 5px; padding-left: 0px;">
+									<a target="_blank" href="https://www.kuaidi100.com/chaxun?nu=">点击查看物流</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 个人信息 -->
+					<div class="logistic_infor log_bottom">
+						<div class="log_bottom">
+							<div class="log_bottom_wrap frist-wrap">
+								<div class="log_information">收货信息</div>
+								<ul>
+									<li>姓名：lucky牛</li>
+									<li>联系电话：17806273103</li>
+									<li>收货地址：北京市 市辖区 海淀区 1605号</li>
+								</ul>
+							</div>
+							<div class="log_bottom_wrap">
+								<div class="log_information">发票信息</div>
+								<ul>
+									<li><em> 是否开具发票：</em>
+										<font>是</font>
+									</li>
+									<li><em> 发票类型：</em>电子发票</li>
+									<li><em> 姓名：</em>个人</li>
+								</ul>
+							</div>
+							<div class="log_bottom_wrap last-bottom">
+								<div class="log_information">支付方式及送货时间</div>
+								<ul>
+									<li>支付方式：支付宝</li>
+									<li>送货时间：送货时候电话沟通</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 引入底部 -->
+		<div class="foot"></div>
+		<!-- 引入底部 -->
+		<script src="js/lib/jquery-3.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/order_detail.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page_js/myoder.js" type="text/javascript" charset="utf-8"></script>
+		
+
+
+
+
+	</body>
+</html>

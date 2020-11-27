@@ -1,0 +1,453 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.order {
+	width: 100%;
+	background-color: #F4F4F4;
+	font-size: 14px;
+	padding-bottom: 50px;
+}
+
+.order .order_cont {
+	/* width: 100%; */
+	background-color: white;
+	margin-top: 20px;
+}
+
+.order_wrap .add_tit {
+	padding: 0 20px;
+	height: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.order_wrap .add_tit .tit_rgt:hover {
+	color: #06e;
+}
+
+/* 地址添加 */
+.order_wrap .add_address {
+	padding: 0 20px 20px 20px;
+	box-sizing: border-box;
+
+}
+
+.order_wrap .add_address>li {
+	float: left;
+	width: calc((100% - 60px) / 4);
+	margin-right: 20px;
+	height: 141px;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 1px solid #EEEEEE;
+	overflow: hidden;
+	border-radius: 3px;
+	position: relative;
+	transition: all 0.5s;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.add_address .add_item .add_dis {
+	display: none;
+}
+
+/* .order_wrap .add_address .add_img {
+	float: left;
+	width: calc((100% - 60px) / 4);
+	margin-right: 20px;
+	height: 141px;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 1px solid #EEEEEE;
+	overflow: hidden;
+	border-radius: 3px;
+	position: relative;
+	transition: all 0.5s;
+	margin-top: 10px;
+} */
+
+.order_wrap .add_box {
+	padding-bottom: 20px;
+}
+
+.order_wrap .add_box .add_name {
+	color: #333;
+}
+
+.order_wrap .add_box .add_default {
+	cursor: pointer;
+}
+
+.order_wrap .add_box .add_default img {
+	vertical-align: middle;
+}
+
+.order_wrap .add_box .add_default span {
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+.add_address .add_item .add_phone {
+	font-size: 14px;
+	padding-bottom: 8px;
+	color: #333;
+}
+
+.add_address .add_item .add_size {
+	font-size: 12px;
+}
+
+.add_address .add_item i {
+	font-size: 16px;
+	display: none;
+}
+
+.add_address .add_item i:hover {
+	cursor: pointer;
+	color: #2e8ae4;
+}
+
+.add_address .add_item .add_del {
+	position: absolute;
+	bottom: 10px;
+	right: 26px;
+
+}
+
+.add_address .add_item .add_edit {
+	position: absolute;
+	bottom: 9px;
+	right: 58px;
+}
+
+.add_address>li:hover i {
+	display: block;
+}
+
+.add_address>li:hover {
+	border: 1px solid #2e8ae4;
+	box-shadow: 0 0 20px -4px rgba(0, 0, 0, .2);
+}
+
+.add_address>li.active {
+	border: 1px solid #2e8ae4;
+	position: relative;
+}
+
+.add_address>li.active::before {
+	content: '√';
+	font-size: 16px;
+	color: white;
+	position: absolute;
+	bottom: -1px;
+	right: -6px;
+	width: 18px;
+	z-index: 100;
+}
+
+
+.add_address>li.active::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 24px solid #2e8ae4;
+	border-left: 27px solid transparent;
+}
+
+.add_address>li:last-child {
+	border: 1px dotted #EEEEEE;
+}
+
+.add_address>li:last-child .imgbox {
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+	background: url(../img/order/add4.png) center center;
+	background-size: cover;
+	margin-top: 10px;
+}
+
+.order_wrap .mode {
+	padding: 20px;
+	color: #333333;
+}
+
+.order_wrap .pay {
+	padding: 20px;
+}
+
+.order_wrap .pay a {
+	width: 150px;
+	height: 50px;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	line-height: 66px;
+	margin-right: 20px;
+	transition: all, .5s;
+	display: inline-block;
+}
+
+.order_wrap .pay a:hover {
+	border: 1px solid #2e8ae4;
+}
+
+.order_wrap .invoice {
+	padding: 30px 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+	padding-bottom: 210px;
+}
+
+.order_wrap .invoice .electronic {
+	margin-right: 40px;
+	display: inline-block;
+	position: relative;
+}
+
+.invoice label {
+	margin-left: 10px;
+}
+
+.invoice .electronic .inputbox {
+	background-color: white;
+	position: absolute;
+	left: 0;
+	top: 26px;
+	width: 305px;
+	height: 163px;
+	padding: 30px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	box-shadow: 0 0 20px -4px rgba(0, 0, 0, .2);
+}
+
+.order_wrap .invoice .appreciation {
+	display: inline-block;
+}
+
+.electronic .inputbox input {
+	width: 220px;
+	height: 40px;
+	padding: 0 10px;
+	margin: 0 0 20px 0;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	display: block;
+	transition: all, .3s;
+	outline: 0 none;
+}
+
+.electronic .inputbox .active {
+	border: 1px solid #2e8ae4;
+}
+
+/* 商品信息 */
+.order_wrap .goods {
+	padding: 40px 0 60px 20px;
+	background-color: white;
+}
+
+.goods .car_title {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.order_lists .list_con {
+	width: 600px;
+	padding-left: 50px;
+}
+
+.car_order .car_title .tit_info {
+	width: 600px;
+	text-indent: 26px;
+	text-align: left;
+	padding-left: 50px;
+}
+
+.order_wrap .car_order .tit_price {
+	width: 180px;
+}
+
+.goods .order_lists .list_price {
+	width: 180px;
+}
+
+.goods .order_lists .list_amount {
+	width: 200px;
+}
+
+.order_wrap .car_order .tit_num {
+	width: 200px;
+}
+
+.goods .bar-wrapper {
+	width: 1191px;
+	height: 55px;
+	background: #fff;
+}
+
+.goods .goon_shop i {
+	color: #2e8ae4;
+	font-size: 22px;
+	padding-right: 6px;
+	vertical-align: middle;
+}
+
+.goods .goon_shop span {
+	vertical-align: middle;
+}
+
+/* 弹窗口 */
+.form {
+	width: 600px;
+	padding: 30px 50px 0 50px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.form>p {
+	margin-top: 10px;
+}
+
+.form>p>input {
+	width: 500px;
+	border: 1px solid #eeeeee;
+	outline: none;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 10px;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+.form .wrap {
+	width: 500px;
+	border: 1px solid #eeeeee;
+	outline: none;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 10px;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+.form .wrap #city {
+	border: 0;
+	outline: 0;
+	height: 36px;
+	line-height: 38px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+#PoPy {
+	background: white !important;
+}
+
+._citys0 {
+	border: 2px solid #2e8ae4;
+}
+
+._citys1 a:hover {
+	color: #fff;
+	background-color: #2e8ae4;
+}
+
+._citys span {
+	color: #2e8ae4;
+	position: absolute;
+	right: 16px;
+	top: 15px;
+	border: 1px solid #2e8ae4;
+
+}
+
+.form>p>input {
+	font-size: 14px;
+}
+
+.form>p>input::placeholder {
+	font-size: 14px !important;
+	color: #333;
+}
+
+.form>p>input.o_short {
+	width: 246px;
+}
+
+.form>p>textarea.o_text {
+	width: 500px;
+	height: 80px;
+	resize: none;
+	outline: none;
+	border: 1px solid #eeeeee;
+	font-size: 14px;
+	color: #333;
+	padding: 10px 0 0 10px;
+	box-sizing: border-box;
+	border-radius: 6px;
+}
+
+.form>p:last-child {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.form>p:last-child button {
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 6px;
+	outline: none;
+	border: 1px solid #eeeeee;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.form>p:last-child button.o_confirm {
+	background-color: #198af1;
+	color: white;
+	margin-right: 20px;
+}
+.form>p:last-child button.o_Btn {
+	background-color: #198af1;
+	color: white;
+	margin-right: 20px;
+/* 	background-color: pink; */
+	display: none;
+}
+
+
+.form>p:last-child button.o_close {
+	/* 	background-color: #198af1;
+	color: white; */
+}
+
+/* #layui-layer-shade2 {
+	z-index: 3 !important;
+}
+
+#layui-layer-shade1 {
+	z-index: 4 !important;
+}
+
+#layui-layer1 {
+	z-index: 300 !important;
+}
+
+#PoPy {
+	z-index: 10000000000000000000 !important;
+	background: white !important;
+}
+ */

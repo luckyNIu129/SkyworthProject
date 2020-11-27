@@ -1,0 +1,332 @@
+em {
+	/* font-style: italic; */
+	font-style: normal;
+}
+
+.paybox {
+	font-size: 12px;
+}
+
+.relative {
+	position: relative;
+}
+
+.conter-bar {
+	height: 26px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #898989;
+	border-bottom: 1px solid ##4D4D4D;
+}
+
+.conter-navbar {
+	width: 950px;
+	margin: 0 auto;
+}
+
+.conter-navbar {
+	color: #fff;
+}
+
+.conter-bar .navbar-txt1 {
+	padding: 4px 15px;
+}
+
+.conter-bar .navbar-txt2 a {
+	display: inline-block;
+	padding: 4px 15px;
+	color: #fff;
+}
+
+.conter-bar .navbar-txt2 a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.navbar-txt2:before {
+	content: "";
+	position: absolute;
+	bottom: 189px;
+	right: 280px;
+	width: 2px;
+	height: 30px;
+	background: url(../imgs/counter/line1.png) no-repeat;
+}
+
+
+.conter-title {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+}
+
+.conter-box {
+	width: 950px;
+	margin: 0 auto;
+}
+
+.conter-logo {
+	width: 250px;
+	height: 60px;
+}
+
+.conter-logo img {
+	display: block;
+	width: 114px;
+	position: relative;
+	left: 0;
+	top: 10px;
+	float: left;
+	height: 40px;
+	background-repeat: no-repeat;
+}
+
+.conter-logo .check {
+	display: inline-block;
+	font-size: 16px;
+	font-family: "Microsoft YaHei", 微软雅黑, "宋体";
+	color: #676d70;
+	height: 20px;
+	margin: 27px 10px 10px 10px;
+}
+
+.conter-logo .check:before {
+	content: "";
+	width: 1px;
+	height: 28px;
+	background-color: #676d70;
+	position: absolute;
+	left: -18px;
+	top: -9px;
+}
+
+.conter-main {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #eff0f1;
+	border-top: 1px solid #bbb;
+}
+
+.conter-body {
+	width: 950px;
+	margin: 0 auto;
+	padding-left: 50px;
+}
+
+.conter-top1 {
+	padding: 30px 0px 0px 0px;
+	color: #000;
+}
+
+
+.conter-top2 {
+	padding: 20px 0px 10px 0px;
+	color: #000;
+	font-weight: 700;
+	font-size: 14px;
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 4px;
+}
+
+.conter-top1 .conter-txt1 .redword {
+	position: absolute;
+	bottom: -30px;
+	right: -790px;
+	font-size: 22px;
+	line-height: 22px;
+	color: #f60;
+
+}
+
+.conter-top2 .conter-txt2:after {
+	content: "订单详情";
+	position: absolute;
+	right: -390px;
+	bottom: -22px;
+	height: 22px;
+	padding: 2px 8px 1px;
+	font-weight: 700;
+	border-top: 0;
+	background: #b3b3b3;
+	z-index: 100;
+	color: #fff;
+}
+
+
+
+
+.conter-top3 {
+	width: 680px;
+	text-align: left;
+	color: #000;
+	display: none;
+}
+
+.conter-top3 p {
+	line-height: 24px;
+}
+
+/* 支付宝动画效果 */
+
+/* 左侧支付宝二维码 */
+.conter-shuff {
+	margin: 0px 0px 50px 0px;
+}
+
+/* 超出部分隐藏 */
+.conter-shuff .whithout {
+	overflow: hidden;
+	margin: 0px auto;
+	width: 950px;
+	border-top: 3px solid #b3b3b3;
+	border-bottom: 3px solid #b3b3b3;
+}
+
+.conter-shuf1 .whithout .internal {
+	width: 1800px !important;
+}
+
+/* 支付宝阴影框 */
+.in-left .con-include {
+	position: absolute;
+	left: 270px;
+	top: 110px;
+	width: 168px;
+	/* height: auto; */
+	min-height: 168px;
+	margin: 0 auto;
+	padding: 6px 6px 20px 6px;
+	border: 1px solid #d3d3d3;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.in-left .con-describe {
+	position: absolute;
+	left: 306px;
+	top: 50px;
+}
+
+.in-left .con-include .con-words1 {
+	color: #4D4D4D;
+	font-size: 12px;
+}
+
+.in-left .con-describe .con-words2 {
+	font-size: 26px;
+	font-weight: 700;
+	color: #f60;
+}
+
+.in-left .con-words4 {
+	position: absolute;
+	right: 365px;
+	bottom: 75px;
+	font-size: 12px;
+	color: #a6a6a6;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.in-left .con-words5 {
+	position: absolute;
+	top: 25px;
+	right: 95px;
+}
+
+/* 扫一扫 */
+.in-left .con-include .con-pay {
+	left: 70px;
+	top: 70px;
+	width: 42px;
+	height: 42px;
+	position: absolute;
+	display: inline-block;
+	background: url(../imgs/counter/zhi.png) no-repeat;
+}
+
+.in-left .con-include .con-pic2 {
+	display: inline-block;
+	margin: 16px 10px 0px 10px;
+}
+
+.in-left .con-include .con-pic2 .con-under {
+	padding-right: 10px;
+}
+
+.in-left .con-include .con-pic2 .con-words3 {
+	color: #4D4D4D;
+	font-size: 12px;
+}
+
+/* 左侧二维码 */
+.internal .in-left {
+	background-color: white;
+	width: 800px;
+	height: 470px;
+}
+
+/* 灰色电脑框 电脑 */
+.internal .in-middle {
+	width: 147px;
+	background-color: #e6e6e6;
+	padding: 165px 0px;
+	border-left: 1px solid #d9d9d9;
+	position: relative;
+}
+
+
+.internal .in-middle .middle-top1 {
+	padding-bottom: 30px;
+}
+
+/* 手机 */
+.internal .in-phone {
+	width: 147px;
+	background-color: #e6e6e6;
+	padding: 117px 0 162px 0px;
+	border-right: 1px solid #d9d9d9;
+}
+
+.internal .in-phone:hover {
+	transition: all 0.5s;
+	position: relative;
+}
+
+.internal .in-phone .middle-words1 {
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+
+.internal .in-phone .middle-top2 {
+	padding-bottom: 30px;
+}
+
+.internal .in-right img {
+	width: 800px;
+	height: 469px;
+	display: block;
+}
+
+/* 最下部 */
+.conter-final .final-top a {
+	color: #808080;
+}
+
+.conter-final .final-top a:hover {
+	text-decoration: underline;
+}
+
+.conter-final .final-under img {
+	display: inline-block;
+	padding: 20px 0px 50px 0px;
+}
+
+.internal {
+	width: 1900px;
+	position: relative;
+	left: 0;
+}

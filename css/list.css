@@ -1,0 +1,273 @@
+a {
+	outline: none 0;
+
+}
+
+.headbox {
+	height: 90px;
+	font-size: 12px;
+}
+
+.navbar {
+	font-size: 12px;
+}
+.footer {
+    margin-top: 0px;
+}
+.listbox {
+	width: 100%;
+	background-color: #F4F4F4;
+	padding-bottom: 60px;
+	font-size: 12px;
+}
+
+.listbox .list_st {
+	height: 36px;
+	line-height: 36px;
+	color: #666;
+}
+
+.listbox .list_st .st>span {
+	color: #999;
+}
+
+.listbox .list_item {
+	background-color: white;
+}
+
+.list_item .li_ul {
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 1px solid #f0f0f0;
+	color: #333333;
+}
+
+.list_item .li_ul:last-child {
+	border-bottom: 0;
+}
+
+.list_item .li_ul>li {
+	float: left;
+	text-align: left;
+	width: 100px;
+}
+
+.list_item .li_ul>li:first-child a {
+	color: #999999;
+}
+
+.list_item .li_ul>li:first-child a:hover {
+	color: #999999;
+}
+
+.list_item .li_ul>li>a {
+	/* display: block; */
+	padding: 5px 7px;
+}
+
+
+.li_ul>li>a.active {
+	padding: 5px 7px;
+	color: #2e8ae4;
+	border: 1px solid #2e8ae4;
+}
+
+.list_sort {
+	background-color: white;
+	width: 100%;
+	margin: 10px auto;
+	height: 40px;
+	line-height: 40px;
+
+}
+
+.list_sort .ulsort::after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.list_sort .sort_lef li {
+	float: left;
+	margin-right: 30px;
+}
+
+.list_sort .sort_lef li a {
+	/* display: inline-block; */
+}
+
+.sort_lef li a.sort_active {
+	padding: 5px 7px;
+	color: #2e8ae4;
+	border: 1px solid #2e8ae4;
+}
+
+.sort_lef .Instock>a>input {
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	position: relative;
+}
+
+.sort_lef .Instock>a>.checked::after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 3px;
+	left: 3px;
+	border: 2px solid #2e8ae4;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg);
+}
+
+.sort_lef .Instock>a:hover .checked::after {
+	opacity: 1;
+}
+
+.sort_lef .Instock>a>span {
+	vertical-align: middle;
+	border: 0;
+	color: #555555;
+}
+
+.list_sort .sort_lef::after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.list_sort .sort_rgt span {
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+}
+
+/* 下部图片 */
+.list_content {
+	margin-top: 25px;
+}
+
+.list_content .content {
+	/* background-color: white; */
+}
+
+.list_content .content .c_list {
+	width: 100%;
+}
+
+.list_content .content .c_list>li {
+	float: left;
+	width: calc((100% - 48px) / 4);
+	margin-right: 12px;
+	height: 430px;
+	background-color: white;
+	padding: 25px;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	transition: all 0.5s;
+
+}
+
+.list_content .content .c_list>li:last-child {
+	margin-right: 0;
+}
+
+.content .c_list>li>a {
+	display: block;
+	position: relative;
+}
+
+.content .c_list>li:hover {
+	box-shadow: 0 0 25px -2px rgba(0, 0, 0, .2);
+}
+
+.content .c_list>li>a .li_img img {
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+}
+
+.content .c_list>li>a .li_name {
+	font-size: 18px;
+	color: #e83734;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.content .c_list>li>a .li_descibe {
+	width: 100%;
+	color: #999;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 12px;
+	line-height: 28px;
+}
+
+.content .c_list>li:hover .li_descibe {
+	color: #06e;
+}
+
+.content .c_list>li>a .li_price {
+	font-size: 14px;
+	color: #555;
+	padding-top: 5px;
+}
+
+/* .content .c_list>li>a:hover .li_price {
+	color: #06e;
+} */
+
+.content .c_list>li>a .li_company span {
+	vertical-align: middle;
+}
+
+.content .c_list>li>a .li_company img {
+	vertical-align: middle;
+}
+
+.content .c_list>li>a .li_car {
+	/* font-size: 18px; */
+	line-height: 34px;
+}
+
+.content .c_list>li>a:hover .li_car {
+	color: #555;
+}
+
+.content .c_list>li>a:hover .li_company {
+	color: #555;
+}
+
+.content .c_list>li>a .li_car:hover .fl {
+	color: #06e;
+}
+
+.content .c_list>li>a .hot {
+	position: absolute;
+	right: -8px;
+	top: -25px;
+}
+
+.content .c_list>li>a .hot img {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+}
+
+/* 分页器 */
+.page {
+	margin-top: 35px;
+}
+
+.page .pageindex {
+	width: 100%;
+	text-align: center;
+}

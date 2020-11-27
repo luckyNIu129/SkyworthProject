@@ -1,0 +1,194 @@
+/* 导航菜单 */
+.box {
+	width: 100%;
+	height: 90px;
+	background-color: lightgray;
+}
+
+.container {
+	width: 1210px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.menubox {
+	height: 36px;
+	width: 100%;
+	background: #FFF;
+	z-index: 3;
+	border-bottom: 1px solid #2e8ae4;
+	line-height: 36px;
+	font-size: 12px;
+}
+
+.menubox .menu {
+	padding-left: 15px;
+	width: 190px;
+	box-sizing: border-box;
+	background-color: #2e8ae4;
+	cursor: pointer;
+	color: white;
+	position: relative;
+}
+
+.menubox .menu i {
+	font-size: 16px;
+	margin-right: 8px;
+}
+
+.barlist::clearfix {
+	content: '';
+	clear: both;
+	display: block;
+	height: 0;
+}
+
+.barlist {
+	margin-left: 10px;
+}
+
+.barlist>li {
+	float: left;
+
+}
+
+.barlist>li>a {
+	display: block;
+	padding: 0 26px;
+}
+
+.barlist>li>a:hover {
+	color: #FFF;
+	cursor: pointer;
+	background: #2e8ae4;
+}
+
+/* 菜单栏 */
+.menubox .menu .menucover {
+	position: absolute;
+	top: 37px;
+	left: 0;
+	width: 190px;
+	height: 510px;
+	background: linear-gradient(#3084e5, #18ebe2);
+	opacity: 0.9;
+	z-index: 1000;
+}
+
+
+.menu .menucover .menu_li {
+	padding: 0px 2px 0 15px;
+	height: 36px;
+	line-height: 36px;
+	box-sizing: border-box;
+	font-size: 12px;
+	/* position: relative; */
+}
+
+.menu .menucover .menu_li:hover {
+	background: #035a9f;
+	color: #2e8ae4;
+	cursor: pointer;
+}
+
+
+
+.menu .menucover .menu_li>a {
+	display: block;
+	color: white;
+}
+
+.menu .menucover .menu_li>a .next_img i {
+	font-size: 18px;
+	transition: all 0.5s;
+}
+
+.menu .menucover .menu_li:hover .next_img i {
+	transform: rotate(90deg);
+}
+
+.menu .menucover .menu_li>a .next_img .fa-angle-down {
+	display: none;
+	transition: all 0.5s;
+}
+
+/* menu二级列表 */
+.menubox {
+	position: relative;
+}
+
+.menucover>li .level_list {
+	position: absolute;
+	left: 190px;
+	top: -2px;
+	max-width: 800px;
+	min-width: 500px;
+	height: 512px;
+	box-shadow: -2px -2px 16px rgba(0, 0, 0, .18);
+	background-color: white;
+	transition: all 0.5s;
+	border: 1px solid #e0e0e0;
+	padding: 15px;
+	box-sizing: border-box;
+	display: none;
+}
+
+.menu .menucover .menu_li:hover .level_list {
+	display: block;
+
+}
+
+.menucover>li .level_list li {
+	float: left;
+	width: calc(100% / 3);
+	text-align: center;
+	overflow: hidden;
+	min-width: 156px;
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+.menucover>li .level_list li:hover>a>span {
+	color: #27aae4;
+}
+
+.level_list>li>a {
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 15px;
+	box-sizing: border-box;
+	max-width: 154px;
+	margin: 0 auto;
+}
+
+.level_list>li>a>img {
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}
+
+.level_list>li>a>span {
+	font-size: 14px;
+	/* width: 172px; */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding-left: 12px;
+}
+
+/* 商品详情 */
+.detail_menu .menu .menucover {
+	display: none;
+}
+
+.detail_menu .menu .menucover a {
+	text-decoration: none;
+}
+
+.detail_menu .menu .menucover:hover,
+.detail_menu .menu:hover .menucover {
+	display: block;
+}
